@@ -16,6 +16,8 @@ fun main() {
 
     println("Nombre: $nombre")
     println("Fecha actual: $fechaFormateada")
+    mostrarTiposDeDatos()
+    procesarRectangulo()
 }
 
 fun mostrarTiposDeDatos() {
@@ -32,13 +34,11 @@ fun mostrarTiposDeDatos() {
 
 fun procesarRectangulo() {
     val largo = 7.5
-    val ancho = 4.2
-    val area = (largo * ancho)
+    val ancho = 4.5
+    val area = largo * ancho
     
     println("El rectángulo tiene:")
     println("Largo: $largo")
     println("Ancho: $ancho")
     println("Área: $area")
 }
-
-procesarRectangulo()
