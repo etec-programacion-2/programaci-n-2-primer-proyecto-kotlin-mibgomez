@@ -18,4 +18,27 @@ fun main() {
     println("Fecha actual: $fechaFormateada")
 }
 
+fun mostrarTiposDeDatos() {
+    val nombre: String = "Juan"
+    val edad: Int = 25
+    val altura: Double = 1.75
+    val esEstudiante: Boolean = true
+    
+    println("Nombre: $nombre")
+    println("Edad: $edad")
+    println("Altura: $altura")
+    println("Es estudiante: $esEstudiante")
+}
 
+fun procesarRectangulo() {
+    val largo = 7.5
+    val ancho = 4.2
+    val area = (largo * ancho)
+    
+    println("El rectángulo tiene:")
+    println("Largo: $largo")
+    println("Ancho: $ancho")
+    println("Área: $area")
+}
+
+procesarRectangulo()
