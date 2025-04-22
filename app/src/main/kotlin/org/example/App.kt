@@ -8,6 +8,12 @@ import java.time.format.DateTimeFormatter
 fun main() {
     println("¡Hola, Kotlin!")
 
+    imprimirNombreYFecha()
+    mostrarTiposDeDatos()
+    procesarRectangulo()
+}
+
+fun imprimirNombreYFecha() {
     val fechaActual = LocalDateTime.now()
     val formatoFecha = DateTimeFormatter.ofPattern("dd/MM/yyyy HH:mm:ss")
     val fechaFormateada = fechaActual.format(formatoFecha)
@@ -16,14 +22,12 @@ fun main() {
 
     println("Nombre: $nombre")
     println("Fecha actual: $fechaFormateada")
-    mostrarTiposDeDatos()
-    procesarRectangulo()
 }
 
 fun mostrarTiposDeDatos() {
-    val nombre: String = "Juan"
-    val edad: Int = 25
-    val altura: Double = 1.75
+    val nombre: String = "Mateo"
+    val edad: Int = 16
+    val altura: Double = 1.89
     val esEstudiante: Boolean = true
     
     println("Nombre: $nombre")
