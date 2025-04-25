@@ -13,6 +13,7 @@ fun main() {
     procesarRectangulo()
     numeroPosNegCero()
     numerosPares()
+    fun exponente()
 }
 
 fun imprimirNombreYFecha() {
@@ -89,4 +90,15 @@ fun numerosPares() {
         k += 2
     } while (k <= 20)
 
+}
+
+fun exponente() {
+    val base: Int = 2
+    val exponente: Int = 4
+    var resultado = 1
+
+    for (i in 1..exponente){ 
+        resultado *= base
+    }
+    println (resultadoFinal)
 }
