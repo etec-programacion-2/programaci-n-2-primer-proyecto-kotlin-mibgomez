@@ -11,6 +11,7 @@ fun main() {
     imprimirNombreYFecha()
     mostrarTiposDeDatos()
     procesarRectangulo()
+    numeroPosNegCero()
 }
 
 fun imprimirNombreYFecha() {
@@ -37,12 +38,26 @@ fun mostrarTiposDeDatos() {
 }
 
 fun procesarRectangulo() {
-    val largo = 7.5
-    val ancho = 4.5
+    val largo: Double = 7.5
+    val ancho: Double = 4.5
     val area = largo * ancho
     
     println("El rectángulo tiene:")
     println("Largo: $largo")
     println("Ancho: $ancho")
     println("Área: $area")
+}
+
+fun numeroPosNegCero() {
+    val numero1: Int = 2
+    val numero2: Int = -6
+    val numero3: Int = 0
+
+    val resultado1 = if (numero1 > 0) "el numero 1 es positivo" else if (numero1 < 0) "el numero 1 es negativo" else "el numero 1 es cero"
+    val resultado2 = if (numero2 > 0) "el numero 2 es positivo" else if (numero2 < 0) "el numero 2 es negativo" else "el numero 2 es cero"
+    val resultado3 = if (numero3 > 0) "el numero 3 es positivo" else if (numero3 < 0) "el numero 3 es negativo" else "el numero 3 es cero"
+    
+    println(resultado1)
+    println(resultado2)
+    println(resultado3)
 }
