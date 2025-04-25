@@ -12,6 +12,7 @@ fun main() {
     mostrarTiposDeDatos()
     procesarRectangulo()
     numeroPosNegCero()
+    numerosPares()
 }
 
 fun imprimirNombreYFecha() {
@@ -60,4 +61,32 @@ fun numeroPosNegCero() {
     println(resultado1)
     println(resultado2)
     println(resultado3)
+}
+
+fun numerosPares() {
+    //for
+
+    println("Usando for:")
+    for (i in 2..20 step 2) {
+        println (i)
+    }
+
+    //while
+
+    println("Usando while:")
+    var j = 2
+    while (j <= 20) {
+        println(j)
+        j += 2
+    }
+
+    //do-while
+
+    println("Usando do-while:")
+    var k = 2
+    do {
+        println(k)
+        k += 2
+    } while (k <= 20)
+
 }
